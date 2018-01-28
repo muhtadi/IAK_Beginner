@@ -22,8 +22,8 @@ public class LoginActivity extends AppCompatActivity {
     private EditText et_password;
     private Button btn_cancel, btn_login;
 
-    private static final String USERNAME = "qwerty";
-    private static final String PASSWORD = "uiop";
+    private static final String USERNAME = "admin";
+    private static final String PASSWORD = "123";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +68,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 } else {
-                    Toast.makeText(LoginActivity.this, "", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "password/username salah", Toast.LENGTH_SHORT).show();
                     et_username.getText().clear();
                     et_password.getText().clear();
                 }

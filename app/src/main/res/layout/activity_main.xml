@@ -19,4 +19,9 @@
         tools:text="Password"
         android:id="@+id/tv_password"/>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/picture"/>
+
 </LinearLayout>
