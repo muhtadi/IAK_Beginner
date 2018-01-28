@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IAK_28_test_flow</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="button_cancel_text">CANCEL</string>
+    <string name="button_login_text">LOGIN</string>
 </resources>

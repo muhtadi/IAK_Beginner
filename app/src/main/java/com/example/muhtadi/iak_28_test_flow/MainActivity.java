@@ -3,16 +3,35 @@ package com.example.muhtadi.iak_28_test_flow;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
+
+    private TextView mUsername;
+    private TextView mPassword;
+
+    public static final String USERNAME = null;
+    public static final String PASSWORD = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: ");
+
+        mUsername = findViewById(R.id.tv_username);
+        mPassword = findViewById(R.id.tv_password);
+
+        String username_intent = getIntent().getStringExtra(USERNAME);
+        String password_intent = getIntent().getStringExtra(PASSWORD);
+
+        Log.d(TAG, username_intent);
+        Log.d(TAG, password_intent);
+
+        mUsername.setText(username_intent);
+        mPassword.setText(password_intent);
     }
 
     @Override
